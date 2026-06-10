@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erez Lonberg — Sea & Air Vision</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    background: #f0f4f8;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 380px;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  }
+  .header {
+    background: linear-gradient(135deg, #0C447C, #185FA5);
+    padding: 32px 24px 28px;
+  }
+  .avatar-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  .avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    flex-shrink: 0;
+    border: 2px solid rgba(255,255,255,0.3);
+  }
+  .name { font-size: 20px; font-weight: 600; color: #fff; }
+  .title-sub { font-size: 13px; color: #B5D4F4; margin-top: 3px; }
+  .company-box {
+    background: rgba(255,255,255,0.12);
+    border-radius: 12px;
+    padding: 12px 16px;
+    border: 1px solid rgba(255,255,255,0.15);
+  }
+  .company-name { font-size: 16px; font-weight: 600; color: #fff; }
+  .company-sub { font-size: 12px; color: #85B7EB; margin-top: 3px; }
+  .body { padding: 24px; }
+  .slogan {
+    font-size: 13px;
+    color: #555;
+    font-style: italic;
+    line-height: 1.6;
+    border-left: 3px solid #185FA5;
+    padding-left: 12px;
+    margin-bottom: 24px;
+  }
+  .contact-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #1a1a1a;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: #f7f9fc;
+    transition: background 0.2s;
+  }
+  .contact-item:hover { background: #eef2f8; }
+  .contact-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: #e6f1fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .contact-icon svg { width: 20px; height: 20px; stroke: #185FA5; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .contact-label { font-size: 11px; color: #888; }
+  .contact-value { font-size: 14px; font-weight: 500; }
+  .divider { height: 1px; background: #f0f0f0; margin: 0 0 20px; }
+  .services-title { font-size: 12px; color: #888; margin-bottom: 12px; text-align: center; text-transform: uppercase; letter-spacing: 0.05em; }
+  .services-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 20px; }
+  .service-item {
+    background: #f7f9fc;
+    border-radius: 12px;
+    padding: 12px 8px;
+    text-align: center;
+    border: 1px solid #e8eef6;
+  }
+  .service-icon { font-size: 22px; margin-bottom: 5px; }
+  .service-label { font-size: 10px; color: #555; line-height: 1.3; }
+  .footer {
+    background: #f7f9fc;
+    border-top: 1px solid #eee;
+    padding: 14px 24px;
+    text-align: center;
+  }
+  .footer-text { font-size: 12px; color: #888; }
+  .footer-years { font-size: 14px; font-weight: 600; color: #185FA5; }
+  .whatsapp-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #25D366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 13px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 16px;
+    transition: background 0.2s;
+  }
+  .whatsapp-btn:hover { background: #1ebe5d; }
+  .whatsapp-btn svg { width: 22px; height: 22px; fill: #fff; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="header">
+    <div class="avatar-row">
+      <div class="avatar">EL</div>
+      <div>
+        <div class="name">Erez Lonberg</div>
+        <div class="title-sub">Directeur & Propriétaire</div>
+      </div>
+    </div>
+    <div class="company-box">
+      <div class="company-name">Sea & Air Vision</div>
+      <div class="company-sub">Transport international — Import & Export · Agent FedEx agréé</div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="slogan">"Transport international — avec honnêteté, confiance et expérience"</div>
+
+    <div class="contact-list">
+      <a href="tel:+972524424268" class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.81 19.79 19.79 0 01.07 2.18 2 2 0 012.03 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Téléphone</div>
+          <div class="contact-value">+972-52-4424268</div>
+        </div>
+      </a>
+
+      <a href="mailto:erez770@gmail.com" class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">erez770@gmail.com</div>
+        </div>
+      </a>
+
+      <a href="https://wa.me/972524424268" class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" style="fill:#25D366;stroke:none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">WhatsApp</div>
+          <div class="contact-value">Envoyer un message</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="divider"></div>
+    <div class="services-title">Nos services</div>
+
+    <div class="services-grid">
+      <div class="service-item">
+        <div class="service-icon">📦</div>
+        <div class="service-label">FedEx International</div>
+      </div>
+      <div class="service-item">
+        <div class="service-icon">✈️</div>
+        <div class="service-label">Fret aérien</div>
+      </div>
+      <div class="service-item">
+        <div class="service-icon">🚢</div>
+        <div class="service-label">Transport maritime</div>
+      </div>
+      <div class="service-item">
+        <div class="service-icon">🚛</div>
+        <div class="service-label">Transport terrestre</div>
+      </div>
+      <div class="service-item">
+        <div class="service-icon">📋</div>
+        <div class="service-label">Dédouanement</div>
+      </div>
+      <div class="service-item">
+        <div class="service-icon">🏗️</div>
+        <div class="service-label">Conteneurs LCL/FCL</div>
+      </div>
+    </div>
+
+    <a href="https://wa.me/972524424268" class="whatsapp-btn">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Contactez-nous sur WhatsApp
+    </a>
+  </div>
+
+  <div class="footer">
+    <div class="footer-years">23 ans d'expérience</div>
+    <div class="footer-text">Transport international — Import & Export dans le monde entier</div>
+  </div>
+</div>
+</body>
+</html>
